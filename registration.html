@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
+    />
+    <meta name="author" content="Ansonika" />
+    <title>Registration Template</title>
+
+    <!-- BASE CSS -->
+    <link href="./assets/bootstrap.min.css" rel="stylesheet" />
+    <link href="./assets/style.css" rel="stylesheet" />
+
+    <!-- YOUR CUSTOM CSS -->
+    <link href="./assets/custom.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="main_container" class="show_container">
+      <div class="wrapper_in">
+        <div class="container-fluid">
+          <div class="subheader" id="quote"></div>
+          <div class="row justify-content-center">
+            <div class="col-xl-9 col-lg-8">
+              <div id="wizard_container" class="wizard" novalidate="novalidate">
+                <div id="top-wizard">
+                  <strong>Progress</strong>
+                  <div
+                    id="progressbar"
+                    class="ui-progressbar ui-widget ui-widget-content ui-corner-all"
+                    role="progressbar"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    aria-valuenow="66.66666666666667"
+                  >
+                    <div
+                      class="ui-progressbar-value ui-widget-header ui-corner-left"
+                      style="width: 67%"
+                    ></div>
+                  </div>
+                </div>
+                <!-- /top-wizard -->
+
+                <form
+                  name="example-1"
+                  id="wrapped"
+                  method="POST"
+                  action="#"
+                  class="wizard-form"
+                  novalidate="novalidate"
+                >
+                  <input
+                    id="website"
+                    name="website"
+                    type="text"
+                    value=""
+                  /><!-- Leave for security protection, read docs for details -->
+                  <div id="middle-wizard" class="wizard-branch wizard-wrapper">
+                    <div class="step wizard-step" style="display: none">
+                      <h3 class="main_question wizard-header">
+                        <strong>1/4</strong>What is your budget?
+                      </h3>
+
+                      <div class="form-group radio_questions">
+                        <label class=""
+                          >1. My budget is under $500
+                          <div class="iradio_square-yellow">
+                            <input
+                              name="question_1"
+                              type="radio"
+                              value="My budget is under $500"
+                              class="icheck required valid"
+                              style="position: absolute; opacity: 0"
+                            /><span
+                              for="question_1"
+                              class="error"
+                              style="display: none"
+                              >Required</span
+                            ><ins
+                              class="iCheck-helper"
+                              style="
+                                position: absolute;
+                                top: 0%;
+                                left: 0%;
+                                display: block;
+                                width: 100%;
+                                height: 100%;
+                                margin: 0px;
+                                padding: 0px;
+                                background: rgb(255, 255, 255);
+                                border: 0px;
+                                opacity: 0;
+                              "
+                            ></ins>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="form-group radio_questions">
+                        <label class=""
+                          >2. My budget is between $500 and $1000
+                          <div class="iradio_square-yellow checked">
+                            <input
+                              name="question_1"
+                              type="radio"
+                              value="My budget is between $500 and $1000"
+                              class="icheck required valid"
+                              style="position: absolute; opacity: 0"
+                            /><ins
+                              class="iCheck-helper"
+                              style="
+                                position: absolute;
+                                top: 0%;
+                                left: 0%;
+                                display: block;
+                                width: 100%;
+                                height: 100%;
+                                margin: 0px;
+                                padding: 0px;
+                                background: rgb(255, 255, 255);
+                                border: 0px;
+                                opacity: 0;
+                              "
+                            ></ins>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="form-group radio_questions">
+                        <label class=""
+                          >3. My budget is between $1000 and $1500
+                          <div class="iradio_square-yellow">
+                            <input
+                              name="question_1"
+                              type="radio"
+                              value="My budget is between $1000 and $1500"
+                              class="icheck required valid"
+                              style="position: absolute; opacity: 0"
+                            /><ins
+                              class="iCheck-helper"
+                              style="
+                                position: absolute;
+                                top: 0%;
+                                left: 0%;
+                                display: block;
+                                width: 100%;
+                                height: 100%;
+                                margin: 0px;
+                                padding: 0px;
+                                background: rgb(255, 255, 255);
+                                border: 0px;
+                                opacity: 0;
+                              "
+                            ></ins>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="form-group radio_questions">
+                        <label class=""
+                          >4. My budget is over $1500
+                          <div class="iradio_square-yellow">
+                            <input
+                              name="question_1"
+                              type="radio"
+                              value="My budget is over $1500"
+                              class="icheck required valid"
+                              style="position: absolute; opacity: 0"
+                            /><ins
+                              class="iCheck-helper"
+                              style="
+                                position: absolute;
+                                top: 0%;
+                                left: 0%;
+                                display: block;
+                                width: 100%;
+                                height: 100%;
+                                margin: 0px;
+                                padding: 0px;
+                                background: rgb(255, 255, 255);
+                                border: 0px;
+                                opacity: 0;
+                              "
+                            ></ins>
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                    <!-- /step 1-->
+
+                    <div class="step wizard-step" style="display: none">
+                      <h3 class="main_question">
+                        <strong>2/4</strong>What your poject need?
+                      </h3>
+
+                      <div class="row add_bottom_30">
+                        <div class="col-sm-6">
+                          <div class="form-group checkbox_questions">
+                            <label class="">
+                              <div
+                                class="icheckbox_square-yellow checked"
+                                style="position: relative"
+                              >
+                                <input
+                                  name="question_2[]"
+                                  type="checkbox"
+                                  value="Custom interface and layout"
+                                  class="icheck required valid"
+                                  style="position: absolute; opacity: 0"
+                                /><ins
+                                  class="iCheck-helper"
+                                  style="
+                                    position: absolute;
+                                    top: 0%;
+                                    left: 0%;
+                                    display: block;
+                                    width: 100%;
+                                    height: 100%;
+                                    margin: 0px;
+                                    padding: 0px;
+                                    background: rgb(255, 255, 255);
+                                    border: 0px;
+                                    opacity: 0;
+                                  "
+                                ></ins>
+                              </div>
+                              Custom interface and layout
+                            </label>
+                          </div>
+                          <div class="form-group checkbox_questions">
+                            <label class="">
+                              <div
+                                class="icheckbox_square-yellow"
+                                style="position: relative"
+                              >
+                                <input
+                                  name="question_2[]"
+                                  type="checkbox"
+                                  value="Web site design"
+                                  class="icheck required"
+                                  style="position: absolute; opacity: 0"
+                                /><ins
+                                  class="iCheck-helper"
+                                  style="
+                                    position: absolute;
+                                    top: 0%;
+                                    left: 0%;
+                                    display: block;
+                                    width: 100%;
+                                    height: 100%;
+                                    margin: 0px;
+                                    padding: 0px;
+                                    background: rgb(255, 255, 255);
+                                    border: 0px;
+                                    opacity: 0;
+                                  "
+                                ></ins>
+                              </div>
+                              Web site design
+                            </label>
+                          </div>
+                          <div class="form-group checkbox_questions">
+                            <label class="">
+                              <div
+                                class="icheckbox_square-yellow checked"
+                                style="position: relative"
+                              >
+                                <input
+                                  name="question_2[]"
+                                  type="checkbox"
+                                  value="Seo optimization"
+                                  class="icheck required"
+                                  style="position: absolute; opacity: 0"
+                                /><ins
+                                  class="iCheck-helper"
+                                  style="
+                                    position: absolute;
+                                    top: 0%;
+                                    left: 0%;
+                                    display: block;
+                                    width: 100%;
+                                    height: 100%;
+                                    margin: 0px;
+                                    padding: 0px;
+                                    background: rgb(255, 255, 255);
+                                    border: 0px;
+                                    opacity: 0;
+                                  "
+                                ></ins>
+                              </div>
+                              Seo optimization
+                            </label>
+                          </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                          <div class="form-group checkbox_questions">
+                            <label class="">
+                              <div
+                                class="icheckbox_square-yellow checked"
+                                style="position: relative"
+                              >
+                                <input
+                                  name="question_2[]"
+                                  type="checkbox"
+                                  value="CMS integrations (Wordpress)"
+                                  class="icheck required"
+                                  style="position: absolute; opacity: 0"
+                                /><ins
+                                  class="iCheck-helper"
+                                  style="
+                                    position: absolute;
+                                    top: 0%;
+                                    left: 0%;
+                                    display: block;
+                                    width: 100%;
+                                    height: 100%;
+                                    margin: 0px;
+                                    padding: 0px;
+                                    background: rgb(255, 255, 255);
+                                    border: 0px;
+                                    opacity: 0;
+                                  "
+                                ></ins>
+                              </div>
+                              CMS integrations (Wordpress)
+                            </label>
+                          </div>
+                          <div class="form-group checkbox_questions">
+                            <label class="">
+                              <div
+                                class="icheckbox_square-yellow checked"
+                                style="position: relative"
+                              >
+                                <input
+                                  name="question_2[]"
+                                  type="checkbox"
+                                  value="Domain registration"
+                                  class="icheck required"
+                                  style="position: absolute; opacity: 0"
+                                /><ins
+                                  class="iCheck-helper"
+                                  style="
+                                    position: absolute;
+                                    top: 0%;
+                                    left: 0%;
+                                    display: block;
+                                    width: 100%;
+                                    height: 100%;
+                                    margin: 0px;
+                                    padding: 0px;
+                                    background: rgb(255, 255, 255);
+                                    border: 0px;
+                                    opacity: 0;
+                                  "
+                                ></ins>
+                              </div>
+                              Domain registration
+                            </label>
+                          </div>
+                          <div class="form-group checkbox_questions">
+                            <label class="">
+                              <div
+                                class="icheckbox_square-yellow checked"
+                                style="position: relative"
+                              >
+                                <input
+                                  name="question_2[]"
+                                  type="checkbox"
+                                  value="Hosting plan"
+                                  class="icheck required"
+                                  style="position: absolute; opacity: 0"
+                                /><ins
+                                  class="iCheck-helper"
+                                  style="
+                                    position: absolute;
+                                    top: 0%;
+                                    left: 0%;
+                                    display: block;
+                                    width: 100%;
+                                    height: 100%;
+                                    margin: 0px;
+                                    padding: 0px;
+                                    background: rgb(255, 255, 255);
+                                    border: 0px;
+                                    opacity: 0;
+                                  "
+                                ></ins>
+                              </div>
+                              Hosting plan
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /row-->
+                      <div class="form-group textarea_info">
+                        <label>Additional info</label>
+                        <textarea
+                          name="addtional_info"
+                          class="form-control valid"
+                          style="height: 150px"
+                          placeholder="How many pages, other details, etc..."
+                        ></textarea>
+                      </div>
+                    </div>
+                    <!-- /step 2-->
+
+                    <div class="step wizard-step current" style="">
+                      <h3 class="main_question">
+                        <strong>3/4</strong>Please answer the following
+                        questions:
+                      </h3>
+
+                      <div class="row">
+                        <div class="col-lg-10">
+                          <div class="form-group select">
+                            <label
+                              >If you already have an hosting plan, please
+                              define:</label
+                            >
+                            <div class="styled-select">
+                              <select class="required valid" name="select_1">
+                                <option value="" selected="">Select</option>
+                                <option value="Unix/Linux + Mysql">
+                                  Unix/Linux + Mysql
+                                </option>
+                                <option value="Windows + Sql">
+                                  Windows + Sql
+                                </option>
+                                <option value="Other">Other</option>
+                              </select>
+                            </div>
+                          </div>
+                          <!-- /select-->
+
+                          <div class="form-group select">
+                            <label
+                              >If you need an hosting plan, please define which
+                              one:</label
+                            >
+                            <div class="styled-select">
+                              <select class="required valid" name="select_2">
+                                <option value="" selected="">Select</option>
+                                <option
+                                  value="Hosting Plan 1 year + Mysql database 500MB"
+                                >
+                                  1 year + Mysql database 500MB
+                                </option>
+                                <option
+                                  value="Hosting Plan 2 year + Mysql database 500MB"
+                                >
+                                  2 year + Mysql database 500MB
+                                </option>
+                                <option
+                                  value="Hosting Plan 2 year + Mysql database 1GB"
+                                >
+                                  2 year + Mysql database 1GB
+                                </option>
+                              </select>
+                            </div>
+                          </div>
+                          <!-- /select-->
+
+                          <div class="form-group select">
+                            <label
+                              >If you need a newsletter campaign, please define
+                              the provider you prefer:</label
+                            >
+                            <div class="styled-select">
+                              <select class="required valid" name="select_3">
+                                <option value="" selected="">Select</option>
+                                <option value="Mailchimp">Mailchimp</option>
+                                <option value="CampaignMonitor">
+                                  CampaignMonitor
+                                </option>
+                                <option value="MailUp">MailUp</option>
+                              </select>
+                            </div>
+                          </div>
+                          <!-- /select-->
+                        </div>
+                      </div>
+                      <!-- /row-->
+                    </div>
+                    <!-- /step 3-->
+
+                    <div
+                      class="submit step wizard-step"
+                      style="display: none"
+                      disabled="disabled"
+                    >
+                      <h3 class="main_question">
+                        <strong>4/4</strong>Please fill with your details
+                      </h3>
+
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <div class="form-group">
+                            <input
+                              type="text"
+                              name="company_name"
+                              class="form-control valid"
+                              placeholder="Your company name"
+                            />
+                          </div>
+                          <div class="form-group">
+                            <input
+                              type="text"
+                              name="firstname"
+                              class="required form-control valid"
+                              placeholder="First name"
+                            />
+                          </div>
+                          <div class="form-group">
+                            <input
+                              type="text"
+                              name="lastname"
+                              class="required form-control valid"
+                              placeholder="Last name"
+                            />
+                          </div>
+                        </div>
+                        <!-- /col-sm-6 -->
+
+                        <div class="col-sm-6">
+                          <div class="form-group">
+                            <input
+                              type="email"
+                              name="email"
+                              class="required form-control valid"
+                              placeholder="Your Email"
+                            />
+                          </div>
+                          <div class="form-group">
+                            <input
+                              type="text"
+                              name="telephone"
+                              class="required form-control valid"
+                              placeholder="Your Telephone"
+                            />
+                          </div>
+                          <div class="form-group">
+                            <div class="styled-select">
+                              <select class="required valid" name="country">
+                                <option value="" selected="">
+                                  Select your country
+                                </option>
+                                <option value="Europe">Europe</option>
+                                <option value="Asia">Asia</option>
+                                <option value="North America">
+                                  North America
+                                </option>
+                                <option value="South America">
+                                  South America
+                                </option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- /col-sm-6 -->
+                      </div>
+                      <!-- /row -->
+
+                      <div class="form-group checkbox_questions">
+                        <div
+                          class="icheckbox_square-yellow checked"
+                          style="position: relative"
+                        >
+                          <input
+                            name="terms"
+                            type="checkbox"
+                            class="icheck required"
+                            value="yes"
+                            style="position: absolute; opacity: 0"
+                          /><ins
+                            class="iCheck-helper"
+                            style="
+                              position: absolute;
+                              top: 0%;
+                              left: 0%;
+                              display: block;
+                              width: 100%;
+                              height: 100%;
+                              margin: 0px;
+                              padding: 0px;
+                              background: rgb(255, 255, 255);
+                              border: 0px;
+                              opacity: 0;
+                            "
+                          ></ins>
+                        </div>
+                        <label
+                          >Please accept
+                          <a
+                            href="#"
+                            data-bs-toggle="modal"
+                            data-bs-target="#terms-txt"
+                            >terms and conditions</a
+                          >
+                          ?
+                        </label>
+                      </div>
+                    </div>
+                    <!-- /step 4-->
+                  </div>
+                  <!-- /middle-wizard -->
+                  <div id="bottom-wizard">
+                    <button type="button" name="backward" class="backward">
+                      Backward
+                    </button>
+                    <button type="button" name="forward" class="forward">
+                      Forward
+                    </button>
+                    <button
+                      type="submit"
+                      name="process"
+                      class="submit"
+                      disabled="disabled"
+                    >
+                      Submit
+                    </button>
+                  </div>
+                  <!-- /bottom-wizard -->
+                </form>
+              </div>
+              <!-- /Wizard container -->
+            </div>
+            <!-- /col -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
